@@ -7,6 +7,7 @@ import AccountCard from './_components/account-card'
 import { getCurrentBudget } from '@/actions/budget'
 import BudgetProgress from '../account/_components/budget.progress'
 
+
 async function DashboardPage() {
   const accounts = await getUserAccounts();
   const defaultAccount = accounts?.find((account)=>account.isDefault);
@@ -14,7 +15,7 @@ async function DashboardPage() {
   if(defaultAccount){
     budgetData = await getCurrentBudget(defaultAccount.id)
   }
-    
+
 
   return (
     <div className='space-y-8'>
