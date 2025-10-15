@@ -19,8 +19,8 @@ import { Switch } from "@/components/ui/switch"
 import { useForm } from 'react-hook-form';
 import {zodResolver} from "@hookform/resolvers/zod"
 import { accountSchema } from '@/app/lib/schema';
-import { Input } from './input';
-import { Button } from './button';
+import { Input } from './ui/input';
+import { Button } from './ui/button';
 import useFetch from '@/hooks/use-fetch';
 import { Loader2 } from 'lucide-react';
 import { createAccount } from '@/actions/dashboard';
